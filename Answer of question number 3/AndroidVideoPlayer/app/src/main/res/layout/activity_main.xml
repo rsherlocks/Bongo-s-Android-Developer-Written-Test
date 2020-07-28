@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="@string/app_name"
+        android:background="#EDEDED"
+        android:id="@+id/toolobar"
+        app:menu="@menu/toolbar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.khizar1556.mkvideoplayer.IjkVideoView
+        android:id="@+id/mk_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
